@@ -1,0 +1,189 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content="Clean CSV files locally on Windows. Batch processing, previews, safe output names, and audit reports—without uploading business data." />
+    <meta name="theme-color" content="#08100d" />
+    <title>Smart CSV Cleaner Pro — clean data locally</title>
+    <link rel="icon" type="image/png" href="./favicon.png" />
+    <meta property="og:title" content="Smart CSV Cleaner Pro — clean CSV files locally on Windows" />
+    <meta property="og:description" content="Batch-clean messy CSV exports, keep a before/after report, and never upload client data." />
+    <meta property="og:image" content="https://sitemaster05.github.io/smart-csv-cleaner-site/og-cover.png" />
+    <meta property="og:url" content="https://sitemaster05.github.io/smart-csv-cleaner-site/" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <a class="skip-link" href="#main">Skip to content</a>
+    <header class="topbar">
+      <a class="brand" href="#top" aria-label="Smart CSV Cleaner Pro home">
+        <span class="brand-mark" aria-hidden="true">SC</span>
+        <span>Smart CSV Cleaner <b>Pro</b></span>
+      </a>
+      <nav aria-label="Primary navigation">
+        <a href="#demo">Live demo</a>
+        <a href="#features">Features</a>
+        <a href="#pricing">Pricing</a>
+      </nav>
+      <a class="button button-small button-outline" href="https://github.com/sitemaster05/smart-csv-cleaner">Free CLI</a>
+    </header>
+
+    <main id="main">
+      <section class="hero" id="top">
+        <div class="hero-copy reveal">
+          <p class="eyebrow"><span></span> Local-first data utility for Windows</p>
+          <h1>Clean messy CSV files <em>before they cost you a day.</em></h1>
+          <p class="hero-lead">Batch-clean exports, normalize headers, remove duplicates, and keep an audit trail. Your files stay on your computer.</p>
+          <div class="hero-actions">
+            <a class="button button-primary" href="#pricing">Choose a license</a>
+            <a class="button button-quiet" href="#demo">Try the browser demo <span aria-hidden="true">↓</span></a>
+          </div>
+          <ul class="trust-list" aria-label="Product highlights">
+            <li>No account</li>
+            <li>No telemetry</li>
+            <li>No file uploads</li>
+          </ul>
+        </div>
+
+        <div class="app-frame reveal" aria-label="Product interface preview">
+          <div class="app-titlebar">
+            <div class="window-dots" aria-hidden="true"><i></i><i></i><i></i></div>
+            <span>SMART CSV CLEANER</span>
+            <b>PRO · LOCAL-FIRST</b>
+          </div>
+          <div class="app-body">
+            <div class="file-panel">
+              <div class="toolbar"><span>+ Add files</span><span>+ Add folder</span><span>Remove</span></div>
+              <div class="file-row active"><i>CSV</i><span>customer_export.csv</span><b>128 KB</b></div>
+              <div class="file-row"><i>CSV</i><span>inventory_oct.csv</span><b>86 KB</b></div>
+              <div class="file-row"><i>CSV</i><span>mailing-list.csv</span><b>42 KB</b></div>
+              <div class="mini-table" aria-hidden="true">
+                <span>full_name</span><span>email_address</span><span>city</span>
+                <b>Alice Smith</b><b>alice@example.com</b><b>New York</b>
+                <b>Bob Jones</b><b>bob@example.com</b><b>London</b>
+              </div>
+            </div>
+            <div class="rules-panel">
+              <p>Cleaning rules</p>
+              <label><i class="checked"></i> Normalize headers</label>
+              <label><i class="checked"></i> Trim whitespace</label>
+              <label><i class="checked"></i> Remove duplicates</label>
+              <label><i class="checked"></i> Remove empty rows</label>
+              <div class="result-chip"><b>3 files ready</b><span>0 bytes uploaded</span></div>
+              <button type="button" tabindex="-1">Clean selected files</button>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="proof-strip" aria-label="Technical properties">
+        <div><b>100%</b><span>local processing</span></div>
+        <div><b>4</b><span>delimiter formats</span></div>
+        <div><b>4</b><span>common encodings</span></div>
+        <div><b>HTML</b><span>before/after reports</span></div>
+      </section>
+
+      <section class="demo section" id="demo">
+        <div class="section-heading reveal">
+          <p class="eyebrow"><span></span> Try the workflow</p>
+          <h2>See the cleanup, line by line.</h2>
+          <p>This sample runs entirely in your browser. It demonstrates whitespace cleanup, normalized headers, empty-row removal, and exact deduplication.</p>
+        </div>
+        <div class="demo-grid reveal">
+          <div class="editor-card">
+            <div class="card-label"><span>MESSY INPUT</span><button type="button" id="resetDemo">Reset sample</button></div>
+            <textarea id="csvInput" spellcheck="false" aria-label="CSV input"></textarea>
+          </div>
+          <div class="demo-action">
+            <button class="run-button" type="button" id="cleanDemo" aria-label="Clean sample CSV">→</button>
+            <span>Clean locally</span>
+          </div>
+          <div class="editor-card result-card">
+            <div class="card-label"><span>CLEAN OUTPUT</span><b id="demoStatus">Ready</b></div>
+            <textarea id="csvOutput" spellcheck="false" readonly aria-label="Clean CSV output"></textarea>
+          </div>
+        </div>
+        <div class="demo-metrics" id="demoMetrics" aria-live="polite">
+          <span><b>0</b> duplicates removed</span>
+          <span><b>0</b> empty rows removed</span>
+          <span><b>0</b> cells changed</span>
+        </div>
+      </section>
+
+      <section class="section features" id="features">
+        <div class="section-heading reveal">
+          <p class="eyebrow"><span></span> Built for repeatable work</p>
+          <h2>Not another online converter.</h2>
+          <p>Pro is designed for recurring client exports and business files where privacy, predictable output, and a record of changes matter.</p>
+        </div>
+        <div class="feature-grid">
+          <article class="feature feature-wide reveal">
+            <div><span class="feature-number">01</span><h3>A folder in. A clean folder out.</h3><p>Add multiple files or a complete folder. Each result receives a collision-safe name, so the original is never overwritten.</p></div>
+            <div class="folder-visual" aria-hidden="true"><i>raw exports</i><span>customer_export.csv</span><span>inventory_oct.csv</span><b>cleaned ↗</b></div>
+          </article>
+          <article class="feature reveal"><span class="feature-number">02</span><h3>Preview before processing</h3><p>Inspect encoding and delimiter detection against the first rows before running a batch.</p></article>
+          <article class="feature reveal"><span class="feature-number">03</span><h3>Evidence, not guesswork</h3><p>Every batch produces a before/after report that highlights each changed cell, plus JSON reports with rows read, rows written, duplicates and empty rows removed.</p></article>
+          <article class="feature reveal"><span class="feature-number">04</span><h3>Profiles for every client</h3><p>Start from built-in presets such as Excel-ready semicolon output, or save your own rules per client. Profiles stay on your computer—no cloud account or sign-in.</p></article>
+          <article class="feature reveal"><span class="feature-number">05</span><h3>International CSV support</h3><p>Auto-detect UTF-8, UTF-8 BOM, Windows-1251, and Latin-1. Handle comma, semicolon, tab, and pipe delimiters.</p></article>
+        </div>
+      </section>
+
+      <section class="privacy section reveal">
+        <div class="privacy-lock" aria-hidden="true"><span></span></div>
+        <div><p class="eyebrow"><span></span> Local by design</p><h2>Your customer list is not our dataset.</h2></div>
+        <p>Smart CSV Cleaner Pro makes no network requests. There is no account, analytics SDK, ad network, cloud processing, or telemetry. Processing happens on the Windows computer where the application is running.</p>
+      </section>
+
+      <section class="section pricing" id="pricing">
+        <div class="section-heading reveal">
+          <p class="eyebrow"><span></span> One-time licenses</p>
+          <h2>Start small. Keep the tool.</h2>
+          <p>No subscription is planned for version 1. Updates within the purchased 1.x release are included.</p>
+        </div>
+        <div class="pricing-grid">
+          <article class="price-card reveal">
+            <p>PERSONAL</p><h3><sup>$</sup>15</h3><span>One named user · up to 3 devices</span>
+            <ul><li>Windows desktop app</li><li>Batch folder processing</li><li>Audit reports</li><li>Commercial client work</li></ul>
+            <button type="button" data-checkout="personal" disabled>Checkout opens soon</button>
+          </article>
+          <article class="price-card featured reveal">
+            <div class="popular">BEST VALUE</div><p>TOOLKIT</p><h3><sup>$</sup>29</h3><span>Cleaner Pro + opportunity toolkit</span>
+            <ul><li>Everything in Personal</li><li>Opportunity Ranker package</li><li>CSV workflow templates</li><li>Priority 1.x updates</li></ul>
+            <button type="button" data-checkout="toolkit" disabled>Checkout opens soon</button>
+          </article>
+          <article class="price-card reveal">
+            <p>BUSINESS</p><h3><sup>$</sup>59</h3><span>Up to 5 users in one business</span>
+            <ul><li>Everything in Toolkit</li><li>Multi-user license</li><li>Deployment notes</li><li>Business usage rights</li></ul>
+            <button type="button" data-checkout="business" disabled>Checkout opens soon</button>
+          </article>
+        </div>
+        <p class="launch-note">Checkout will activate after payment-provider verification. The free open-source CLI remains available on GitHub.</p>
+      </section>
+
+      <section class="section faq">
+        <div class="section-heading reveal"><p class="eyebrow"><span></span> Questions</p><h2>Before you run the first batch.</h2></div>
+        <div class="faq-list">
+          <details class="reveal"><summary>Does the app upload my CSV files?</summary><p>No. Version 1.0.0 has no networking code. Files are read and written on the local Windows computer.</p></details>
+          <details class="reveal"><summary>Does it overwrite the original?</summary><p>No. Outputs use a <code>_cleaned.csv</code> suffix. If a name already exists, the app adds a number instead of replacing it.</p></details>
+          <details class="reveal"><summary>Can I use it for paid client work?</summary><p>Yes. The Personal license permits commercial data-processing work by the named buyer. A Business license covers multiple users.</p></details>
+          <details class="reveal"><summary>Why might Windows show a warning?</summary><p>The first release is independently distributed and is not code-signed. Verify the official download and its published SHA-256 before running it.</p></details>
+          <details class="reveal"><summary>Who processes the payment?</summary><p>Checkout is handled by Lemon Squeezy, the merchant of record. They accept cards and PayPal, calculate sales tax or VAT for your country, and email your receipt and download link instantly.</p></details>
+          <details class="reveal"><summary>What if it doesn't work for me?</summary><p>If the app does not run on your Windows 10/11 computer or does not do what this page describes, ask for a refund within 14 days of purchase. See the <a href="./terms.html">license and refund terms</a>.</p></details>
+          <details class="reveal"><summary>How do I get help?</summary><p>Reply to your purchase receipt email — it reaches the developer directly. Bug reports for the free CLI can also be opened on <a href="https://github.com/sitemaster05/smart-csv-cleaner/issues">GitHub</a>.</p></details>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <div class="brand"><span class="brand-mark" aria-hidden="true">SC</span><span>Smart CSV Cleaner <b>Pro</b></span></div>
+      <p>Built by <a href="https://github.com/sitemaster05">sitemaster05</a> · No tracking · © 2026</p>
+      <nav class="footer-links" aria-label="Legal">
+        <a href="./terms.html">License &amp; refunds</a>
+        <a href="./privacy.html">Privacy</a>
+        <a href="https://github.com/sitemaster05/smart-csv-cleaner">Free CLI ↗</a>
+      </nav>
+    </footer>
+    <script src="./app.js" defer></script>
+  </body>
+</html>
