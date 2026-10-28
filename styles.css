@@ -144,6 +144,7 @@ footer { width: min(1240px, calc(100% - 40px)); margin: 0 auto; padding: 36px 0 
 footer p { margin: 0 auto; }
 footer a { color: var(--green-soft); text-decoration: none; }
 .footer-links { display: flex; flex-wrap: wrap; gap: 18px; }
+.demo-video { display: block; width: 100%; aspect-ratio: 16 / 10; border: 1px solid var(--line); border-radius: 18px; background: #050a07; box-shadow: 0 30px 80px rgba(0,0,0,.45); }
 details p a { color: var(--green-soft); }
 .legal { width: min(760px, calc(100% - 32px)); margin: 0 auto; padding: 64px 0 90px; }
 .legal h1 { font-size: clamp(30px, 5vw, 44px); margin: 18px 0 6px; }
