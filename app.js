@@ -4,11 +4,11 @@ Alice Smith,alice@example.com,New York,NY
    ,   , ,
 Bob Jones,bob@example.com, London , UK`;
 
-// Lemon Squeezy hosted checkout links; paste them here once the store is live and the buttons turn on.
+// Lemon Squeezy hosted checkout links (live mode); each one opens with only its own variant enabled.
 const CHECKOUT_URLS = {
-  personal: "",
-  toolkit: "",
-  business: "",
+  personal: "https://g-systems.lemonsqueezy.com/checkout/buy/40d9b10d-0329-47ba-8034-ffd21faa63f8?enabled=2311988",
+  toolkit: "https://g-systems.lemonsqueezy.com/checkout/buy/e0ca9e4a-023d-4c59-bd65-9e4e9dd14b7f?enabled=2311989",
+  business: "https://g-systems.lemonsqueezy.com/checkout/buy/e753b30a-04b0-44fb-bec4-f3fd6024faf2?enabled=2311990",
 };
 
 // The "checkout opens soon" note only makes sense until the first live link is configured.
